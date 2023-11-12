@@ -4,110 +4,33 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+
 		<title>Mijn eerste webpagina</title>
 	</head>
 
-	<body id="start">
-		<main>
-			<!-- navigatie -->
-			<nav>
-				<a href="#biografie">Biografie</a>
-				<a href="#elementen">Elementen</a>
-				<a href="#afbeeldingen">Afbeeldingen</a>
-				<a href="#kolom-uitleg">Kolommen</a>
-				<a href="#opzoeken">Opzoeken</a>
-			</nav>
-			<!-- Dit is de paginatitel, een H1 element -->
-			<h1>Hee Grote Wereld!</h1>
+	<body>
+		<h2>dit is een h2 subkop</h2>
+		<h2>dit is een h2 subkop</h2>
+		<h2>dit is een h2 subkop</h2>
+		<h2>dit is een h2 subkop</h2>
+		<h2>dit is een h2 subkop</h2>
+		<h2>dit is een h2 subkop</h2>
 
-			<!-- Dit is een subkop, een H2 element -->
-			<h2>En dit is een H2 subkop</h2>
+		<h3>Blokjes</h3>
+		<section class="blokjes"></section>
+		<section class="blokjes"></section>
+		<section class="blokjes"></section>
+		<section class="blokjes"></section>
 
-			<!-- Dit is een hyperlink, een A element -->
-			Hieronder (groen) een voorbeeld van een HTML <strong>anchor</strong> element, in dit geval een <strong>absolute link</strong>, die linkt naar een pagina <strong>buiten</strong> je website. De CSS code zorgt ervoor dat de link er als een button uitziet!
-			<a href="http://www.google.com" class="google-linkje">Linkje naar Google</a>
+		<h3>Balletjes</h3>
+		<section class="balletjes"></section>
+		<section class="balletjes"></section>
+		<section class="balletjes"></section>
+		<section class="balletjes"></section>
 
-			<!-- Dit is een hyperlink, een A element -->
-			<p>En hieronder een ander soort anchor link: deze linkt naar een andere plek <strong>binnen</strong> de pagina die je nu leest! De linkjes in de navigatie bovenin de pagina zijn ook anchor linkjes!</p>
-			<a href="#afbeeldingen">Ga naar afbeeldingen</a>
+		<h3>landschap met boompjes</h3>
+		<section id="landschap"></section>
 
-			<h2 id="elementen">HTML elementen</h2>
-			<!-- Dis is een paragraaf, een P element! -->
-			<p>Deze pagina content zit een een HTML element dat <strong>main</strong> heet. Deze is in CSS op een max-width van 800px gezet en in het midden geplaatst. Waarom max-width? Zoek het verschil tussen de <strong>CSS properties</strong> width, min-width en max-width. Hieronder zie je een afbeelding (GIF afbeelding, kijk maar in je HTML code) met uitleg hoe alle CSS elementen heten. Onderstaande afbeelding is gedownload van w3 Schools, zie hier Gebruik die benamingen ook bij je uitleg over de CSS code in je portfolio</p>
-
-			<img src="images/img_selector.gif" alt="plaatje van W3Schools" />
-
-			<h2 id="afbeeldingen">Afbeeldingen</h2>
-
-			<p>Hieronder een IMG element. In dit geval een JPG foto, de foto loopt in de lengte, dus horizontaal.</p>
-			<img src="images/noah.jpg" alt="dit is ook noah" />
-
-			<p>Hieronder dezelfde foto, maar dan met CSS "geknipt" en in een cirkel gezet! Kijk in je CSS bestand hoe dat gedaan is!</p>
-			<section class="cirkelfoto">
-				<img src="images/noah.jpg" alt="noah" />
-			</section>
-
-			<h2 id="biografie">CSS classes</h2>
-
-			<p class="inleiding">Deze paragraaf ziet er visueel heel anders uit dan de andere paragrafen die eronder staan. Dat komt omdat je met CSS speciale selectors kan aanmaken, die <strong>classes</strong> worden genoemd (zie CSS bestand). Deze kun je vervolgens aan HTML elementen koppelen om ze uniek vorm te geven. Kijk maar naar het HTML attribute genaamd "class", in de code van je HTML pagina bij deze paragraaf. (weet je nog wat het verschil is tussen een <strong>HTML element</strong> en een <strong>HTML attribute?</strong>) Zoek op W3 Schools: uitleg <a href="https://www.w3schools.com/html/html_elements.asp">elements</a> en uitleg <a href="https://www.w3schools.com/html/html_attributes.asp">attributes</a></p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit necessitatibus sint odit qui aspernatur quo vero tempora voluptate recusandae eum nihil, mollitia, temporibus impedit, facilis quam magnam. Tempora, quia minus!LoremTempora, quia minus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel reiciendis, enim neque iusto voluptatem, tempore perspiciatis quidem eius, sapiente reprehenderit ad! Reprehenderit, similique?</p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit necessitatibus sint odit qui aspernatur quo vero tempora voluptate recusandae eum nihil, mollitia, temporibus impedit, facilis quam magnam. Tempora, quia minus!LoremTempora, quia minus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel reiciendis, enim neque iusto voluptatem, tempore perspiciatis quidem eius, sapiente reprehenderit ad! Reprehenderit, similique?</p>
-
-			<h2 id="kolom-uitleg">Dingen naast elkaar in plaats van onder elkaar!</h2>
-
-			<p>Dat kan! Met de CSS property display. In de CSS zet je het blok waar je items in zitten op <strong>display:grid</strong></p>
-
-			<section class="twee-kolommen">
-				<article class="cirkelfoto">
-					<img src="images/noah.jpg" alt="noah" />
-				</article>
-				<article>
-					<h2>Dit is een subkopje</h2>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex voluptate aliquid iusto voluptatibus quaerataliquid iusto voluptatibus quaerat, nisi quae nostrum vero fugit quia dolores accusamus unde modi a cum est ipsam veritatis blanditiis!</p>
-				</article>
-			</section>
-
-			<h2>Of tekstkolommen</h2>
-			<!-- Hier het voorbeeld van tekst in 2 kolommen  -->
-			<section class="twee-kolommen">
-				<article>
-					<h2>Dit is een subkopje</h2>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex voluptate aliquid iusto voluptatibus quaerataliquid iusto voluptatibus quaerat, nisi quae nostrum vero fugit quia dolores accusamus unde modi a cum est ipsam veritatis blanditiis!</p>
-				</article>
-				<article>
-					<h2>Dit is een subkopje</h2>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex voluptate aliquid iusto voluptatibus quaerataliquid iusto voluptatibus quaerat, nisi quae nostrum vero fugit quia dolores accusamus unde modi a cum est ipsam veritatis blanditiis!</p>
-				</article>
-			</section>
-
-			<h2>Of afbeelding in kolommen</h2>
-			<!-- Hier het voorbeeld van afbeeldingen in 2 kolommen  -->
-			<section class="twee-kolommen">
-				<article class="cirkelfoto">
-					<img src="images/noah.jpg" alt="noah" />
-				</article>
-				<article class="cirkelfoto">
-					<img src="images/noah.jpg" alt="noah" />
-				</article>
-				<img src="images/noah.jpg" alt="noah" />
-				<img src="images/noah.jpg" alt="noah" />
-			</section>
-			<!-- Hier het voorbeeld van items in 3 kolommen  -->
-			<section class="drie-kolommen">
-				<img src="images/noah.jpg" alt="noah" />
-				<img src="images/noah.jpg" alt="noah" />
-				<img src="images/noah.jpg" alt="noah" />
-			</section>
-			<p>Bovenstaande voorbeelden dekken wel zo'n beetje alle basis mogelijkheden en combinaties voor lay-outen in kolommen voor nu, zou ik zo zeggen!</p>
-			<h2 id="opzoeken">Opzoeken</h2>
-			<p>Ga niet eindeloos Youtube filmpjes zitten kijken over HTML en CSS, ga gewoon coderen en zorg dat je in 2 tabbladen van <strong>W3Schools</strong> simpelweg kan opzoeken wat je nog niet weet of bent vergeten. Zet in 1 tabblad w3schools HTML (<a href="https://www.w3schools.com/html/" target="_blank">klik hier</a>) en in 1 tabblad W3schools CSS (<a href="https://www.w3schools.com/css/" target="_blank">klik hier</a>) Hier vind je overzichten, uitleg en voorbeelden van alle HTML elementen en alle CSS selectors.</p>
-			<p><a href="#start">Terug naar boven</a></p>
-			<p>
-				<strong>CMD Team</strong> <br />Groetjes,<br />
-				David! <br />
-			</p>
-		</main>
+		<script src="scripts.js"></script>
 	</body>
 </html>
