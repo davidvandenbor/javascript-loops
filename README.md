@@ -1,7 +1,8 @@
 # JavaScript Loops
-- **Incremental loop:** Nieuwe HTML objecten uit het niets creeren met loops!
-- **For_of loop:** Door reeds bestaande HTML objecten "loopen" met loops om ze te wijzigen!
+- **Incremental loop:** Nieuwe HTML elementen **uit het niets creëren** met loops!
+- **For_of loop:** Door reeds bestaande HTML elementen "loopen" met loops om ze te wijzigen!
 
+## Voorbeeld bestanden
 Bestanden **downloaden** naar je laptop? [Klik hier](https://github.com/CMD-Groningen/javascript-loops/archive/refs/heads/master.zip)     
 Preview in de browser? [Klik hier](https://cmd-groningen.github.io/javascript-loops)  
 Speel live met deze code in **CodeSandbox** > [Klik hier!](https://codesandbox.io/s/github/CMD-Groningen/javascript-loops) 
@@ -52,7 +53,7 @@ for (items of cirkels) {
 }
 ```
 
-## INCREMENTAL LOOP!
+## Incremental loop
 
 Met de for-of loop manipuleer je dus reeds bestaande HTML elementen. Moet je echter **vanuit het niets nieuwe elementen** creeren, gebruik dan de incremental loop! Bijvoorbeeld:
 
