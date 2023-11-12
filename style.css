@@ -3,11 +3,21 @@ body {
 	font-family: sans-serif;
 }
 
-h2 {
+h3 {
+	color: blue;
 	padding: 5px;
 	margin: 5px;
 	border-bottom: solid 1px black;
 }
+
+p {
+	color: grey;
+}
+strong {
+	color: black;
+}
+
+/* Hieronder de vormgeving van de elementen op de pagina die door loops aangepast worden */
 
 .blokjes {
 	width: 100px;
