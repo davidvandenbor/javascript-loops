@@ -1,0 +1,124 @@
+/* Onderstaande regel haalt Google Fonts op, met name "Roboto Slab" en Lobster" */
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Slab:wght@300;800&display=swap");
+
+body {
+	font-family: "Roboto Slab";
+	font-weight: 300;
+	font-size: 30px;
+	padding: 30px;
+	margin-bottom: 100vh;
+}
+
+nav a {
+	text-decoration: none;
+	border-right: solid 2px black;
+	font-size: 17px;
+	padding: 5px 10px 5px 10px;
+	transition: all 0.5s ease;
+	display: inline-block;
+}
+
+nav a:hover {
+	background: red;
+	color: white;
+	transform: scale(1.2);
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Monoton";
+	font-weight: 100;
+	padding-top: 20px;
+	word-spacing: 10px;
+	line-height: 1;
+	color: red;
+}
+
+h1 {
+	font-size: 100px;
+}
+
+strong {
+	font-weight: 800;
+}
+
+/* Dit zorgt ervoor dat de pagina naar beneden "scrollt" (effect) als je op de linkjes klikt! */
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+}
+a {
+	color: mediumseagreen;
+	font-weight: 700;
+}
+
+.google-linkje {
+	display: block;
+	text-decoration: none;
+	width: fit-content;
+	background: mediumseagreen;
+	color: white;
+	margin: 30px;
+	padding: 20px 50px 20px 50px;
+	border-radius: 10px;
+	transition: all 2s; /* animatie overgang */
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.google-linkje:hover {
+	background: black;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.inleiding {
+	color: darkviolet;
+}
+
+/* De onderstaande twee CSS selectors (in dit geval classes en geen HTML elementen) zorgen allebeide ervoor dat de foto wordt "bijgeknipt" naar vierkant en vervolgens als een cirkel wordt weergegeven */
+
+/* Eerst de cirkel */
+.cirkelfoto {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding: 100% 0 0;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 10px dotted red;
+}
+/* En in de cirkel de foto bijgeknipt */
+.cirkelfoto img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Je kan items ook NAAST ELKAAR zetten! met "display:grid" */
+
+.twee-kolommen {
+	display: grid;
+	font-size: 22px;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	margin-bottom: 50px;
+}
+
+.drie-kolommen {
+	display: grid;
+	font-size: 22px;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
