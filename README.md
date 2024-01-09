@@ -23,7 +23,7 @@ for (items of subkopjes) {
 }
 ```
 
-## Alleen SOMMIGE items wijzigen
+## Wil je alleen sommige items binnen de loop wijzigen?
 
 je kunt ooks langs item loopen en ALLEEN SPECIFIEKE items wijzigen als je dat wilt. Hier pakken we de 4e H2 uit de loop en veranderen **alleen daarvan** de tekst:
 
@@ -33,7 +33,7 @@ for (items of subkopjes) {
 }
 ```
 
-## Langs elementen "loopen" met dezelfde CSS classes
+## Langs HTML elementen "loopen" die dezelfde CSS classes hebben
 
 Je kunt ook door HTML objecten heen "loopen" die dezelfde CSS classes hebben, bijvoorbeeld alle HTML objecten met de CSS class "blokjes". Hieronder maken we ze **allemaal** in 1 klap rood!
 
